@@ -1,0 +1,74 @@
+<ion-content padding class=bg-style>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col col-4></ion-col>
+      <ion-col col-4>
+        <img src="https://picsum.photos/200/300">
+      </ion-col>
+      <ion-col col-4></ion-col>
+    </ion-row>
+
+  </ion-grid>
+  <ion-card>
+    <ion-card-header>Basic Icons</ion-card-header>
+    <ion-card-content>
+      <fa-icon [name]="icon"></fa-icon>
+      fa-{{icon}}
+      <i class="fal rupee"></i>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>Colored Icons</ion-card-header>
+    <ion-card-content>
+      <fa-icon [name]="icon" [color]="color" size="3x"></fa-icon>
+      {{color}}
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>Fixed Width Icons</ion-card-header>
+    <ion-card-content>
+      <fa-icon name="home" fixed-width></fa-icon>
+      Home
+    </ion-card-content>
+    <ion-card-content>
+      <fa-icon name="book" fixed-width></fa-icon>
+      Library
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>Additional class</ion-card-header>
+    <ion-card-content>
+      <fa-icon name="circle-o-notch" class="fa-spin" size="2x"></fa-icon>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>Without using a component</ion-card-header>
+    <ion-card-content>
+      <ul class="fa-ul">
+        <li><i class="fa-li fa fa-check-square"></i>List icons</li>
+        <li><i class="fa-li fa fa-check-square"></i>can be used</li>
+        <li><i class="fa-li fa fa-spinner fa-spin"></i>as bullets</li>
+        <li><i class="fa-li fa fa-square"></i>in lists</li>
+        <li><i class="fa-li fa fa-rupee"></i>in rupee</li>
+      </ul>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>Buttons with icons</ion-card-header>
+    <ion-card-content>
+      <button ion-button icon-left>
+        <fa-icon name="group"></fa-icon>
+        people
+      </button>
+      <button ion-button icon-right>
+        star
+        <fa-icon name="star"></fa-icon>
+      </button>
+      <button ion-button icon-only>
+        Rupee
+        <fa-icon name="rupee"></fa-icon>
+      </button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
